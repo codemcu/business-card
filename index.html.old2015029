@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mauricio Correa - Front-end developer / Visual graphic designer">
+    <meta name="author" content="Mauricio Correa">
+    <meta name="Robots" CONTENT="index,follow">
+
+    <title>Mauricio Correa - Front-end developer / Visual graphic designer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fa/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+    <!-- Custom CSS -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-offset-4 col-lg-2 text-center">
+                <div class="box">
+                    <div class="box-to">
+                        <div class="box-front">
+                            <div class="box-front-header"></div>
+                            <div class="box-front-container">
+                                <div class="avatar">
+                                    <img src="img/mau.gif" alt=""/>
+                                </div>
+                                <div class="title">
+                                    <h1>Mauricio Correa</h1>
+                                    <h3>Front-end developer / Visual graphic designer</h3>
+                                </div>
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-map-marker fa-ja"></i>
+                                            <span>Madrid - Spain</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-building-o fa-ja"></i>
+                                            <span>clase-ejecutiva</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-front-footer">
+                                <hr/>
+                                <small></small>
+                            </div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-back-header"></div>
+                            <div class="box-back-container">
+                                <div class="title">
+                                    <h2>Hobbies</h2>
+                                    <ul>
+                                        <li>
+                                            <p><i class="fa fa-gamepad"></i></li>
+                                        <li>
+                                            <p><i class="fa fa-headphones"></i></li>
+                                        <li>
+                                            <p><i class="fa fa-car"></i></li>
+                                        <li>
+                                            <p><i class="fa fa-money"></i></li>
+                                    </ul>
+                                    <h2>Skills</h2>
+                                    <ul>
+                                        <li><img src="img/logo-html5.png" alt="html5">
+                                            <!-- <p><i class="fa fa-html5"></i> --></li>
+                                        <li><img src="img/logo-CSS3.png" alt="CSS3">
+                                            <!-- <p><i class="fa fa-css3"></i></i> --></li>
+                                        <li><img src="img/logo-jQuery.png" alt="jQuery"></li>
+                                        <li><img src="img/logo-github.png" alt="Github"></li>
+                                        <li><img src="img/logo-dreamweaver.png" alt="Dreamweaver"></li>
+                                        <li><img src="img/logo-flash.png" alt="Flash CS6"></li>
+                                        <li><img src="img/logo-illustrator.png" alt="illustrator"></li>
+                                        <li><img src="img/logo-photoshop.png" alt="Photoshop CC"></li>
+                                        <li><img src="img/logo-AE.png" alt="After Effects CC"></li>
+                                        <li><img src="img/logo-premiere.png" alt="Premiere CC"></li>
+                                        <li><img src="img/logo-C4D.png" alt="Cinema 4D"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-back-footer">
+                                <hr/>
+                                <div class="redes">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <i class="fa fa-facebook-square"></i>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="https://plus.google.com/101960607456738170283/posts" target="_blank">
+                                                <i class="fa fa-google-plus-square"></i></a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <a href="mailto:mauaunot@gmail.com"><i class="fa fa-envelope-square"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery-2.1.1.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- google analitycs -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-63211546-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</body>
+
+</html>

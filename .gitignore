@@ -1,0 +1,4 @@
+#$ cat .gitignore
+css/fa
+fonts/
+.idea/
