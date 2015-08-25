@@ -1,190 +1,242 @@
 .box{
-    position: relative;
-    perspective: 800px;
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -o-perspective: 800px;
-    -ms-perspective: 800px;
+	position: relative;
+	perspective: 800px;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
 }
 
 .box,
 .box-front, 
 .box-back {
-    width: 300px;
-    height: auto;
-    border-radius: 6px;
+	width: 300px;
+	height: auto;
+	border-radius: 6px;
+    margin: 0 auto;
 }
 
 .box-to {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border-radius: 4px;
-    color: @colorTextoBoxContainer;
-    transition: transform .5s;
-    -moz-transition: -moz-transform .5s;
-    -o-transition: -o-transform .5s;
-    -o-transition: -o-transform .5s;
-    -ms-transition: -o-transform .5s;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    position: relative;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 4px;
+	color: @colorTextoBoxContainer;
+	transition: transform .5s;
+	-moz-transition: -moz-transform .5s;
+	-o-transition: -o-transform .5s;
+	-o-transition: -o-transform .5s;
+	-ms-transition: -o-transform .5s;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	position: relative;
 }
 
 .box-front, .box-back{
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: @bgColorFrontSideBackSide;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: @bgColorFrontSideBackSide;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
 }
 
 .box-front {
-    z-index: 2;
-    position: relative;
-    overflow: hidden;
+	z-index: 2;
+	position: relative;
+	overflow: hidden;
 }
 
 .box-back {
-    transform: rotateY( 180deg );
-    z-index: 3;
+	transform: rotateY( 180deg );
+	z-index: 3;
 }
 
 //front side
 
 .box-front-header{
-    // height: 30%;
-    background-color: @bgColorFrontSideHeader;
-    background: url("../img/home.png");
-    background-size: cover;
-    background-position: center -30px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    position: relative;
-    height: 125px; 
-    top: 0; 
+	// height: 30%;
+	background-color: @bgColorFrontSideHeader;
+	background: url("@{bgImgBoxFrontHeader}/home.png");
+	background-size: cover;
+	background-position: center -30px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	position: relative;
+	height: 125px; 
+	top: 0; 
 }
 
 .box-front-container{
-    margin: 65px 0 0 0;
+	margin: 65px 0 0 0;
 }
 
-.box-front-container .avatar{
-    width: 100%;
-    position: absolute;
-    top: 55px;
-    text-align: center;
+.box-front-container {
+	.avatar{
+		width: 100%;
+		position: absolute;
+		top: 55px;
+		text-align: center;
+	}
 }
 
-.box-front-container img{
-    border-radius: 50%;
-    width: 40%;
-    padding: 2px;
-    background-color: @bgColorBoxFrontContainerImg;
-    transition: 0.15s all ease;
-    box-shadow: 0 0 15px 2px rgba(0,0,0,.2);
+.box-front-container {
+	img {
+		border-radius: 50%;
+		width: 40%;
+		padding: 2px;
+		background-color: @bgColorBoxFrontContainerImg;
+		transition: 0.15s all ease;
+		box-shadow: 0 0 15px 2px rgba(0,0,0,.2);
+	}
 }
 
-.box-front-container .fa{
-    font-size: 2rem;
+.box-front-container {
+	.fa{
+		font-size: 2rem;
+	}
 }
 
-.box-front-container .fa-ja{
-    width: 2.5rem;
+.box-front-container {
+	.fa-ja{
+		width: 2.5rem;
+	}	
 }
 
 //back side
 
 .box-back-header {
-  position: relative;
+	position: relative;
 }
 
 .box-back-container{
-    padding-bottom: 116px;
+	padding-bottom: 116px;
 }
 
-.box-back-container li{
-    margin: 5px 10px;
-    display: inline-block;
+.box-back-container {
+	li{
+		margin: 5px 10px;
+		display: inline-block;
+	}	
 }
 
-.box-back li p{
-    margin-top: 20px;
+.box-back {
+	li {	
+		p{
+			margin-top: 20px;
+		}
+	}		
 }
 
-.box-back .fa{
-    font-size: 3rem;
+.box-back {
+ 	.fa{
+		font-size: 3rem;
+	}	
 }
 
 
 //otros
 
-.title{
-    margin: 0 0 15px 0;
+div {
+	&.title{
+		margin: 0 0 15px 0;
+	}	
 }
 
 .details {
-    margin: 0;
+	margin: 0;
 }
 
-.details span{
-    font-size: 1.4rem;
+.details {
+	span{
+		font-size: 1.4rem;
+	}
 }
 
-.details li{
-    margin: 0 0 10px 0;
+.details {
+	li{
+		margin: 0 0 10px 0;
+	}	
 }
 
-.details pre {
-    text-align: left;
-    border: none;
-    border-radius: 0;
-    background: none;
+.details {
+	pre {
+		text-align: left;
+		border: none;
+		border-radius: 0;
+		background: none;
+	}	
 }
 
 hr{
-    border: 1px solid #cccccc;
-    width: 90%;
-    margin: 10px;
+	border: 1px solid #cccccc;
+	width: 90%;
+	margin: 10px;
 }
 
 .redes {
-    margin: 0 85px;
+	margin: 0 85px;
 }
 
-.redes .fa{
-    color: @colorTextoRedesFa;
+.redes {
+	.fa{
+		color: @colorTextoRedesFa;
+	}	
 }
 
-.redes .fa:hover {
-    color: @colorTextoRedesFaHover;
+.redes {
+	.fa:hover {
+		color: @colorTextoRedesFaHover;
+	}	
 }
 
 // footer
 
 .box-front-footer,
 .box-back-footer {
-    position: relative;
-    bottom: 0;
-    padding: 0 10px 10px 10px;
-    width: 100%;
+	position: relative;
+	bottom: 0;
+	padding: 0 10px 10px 10px;
+	width: 100%;
 }
 
 
 // hovers
 
-.box:hover .box-to{
-    transform: rotateY( 180deg );
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    -ms-transform: rotateY( 180deg );
+.box:hover {
+	.box-to{
+ 		.gradosBox(180deg);
+ 	}		
+}
+
+// niveles
+
+.box-back{
+	.nivel_alto{
+		background-color: #dff0d8;
+		padding: 10px;
+	}
+}
+
+.box-back{
+	.nivel_medio{
+		background-color: #d9edf7;
+		padding: 5px;
+    	border-radius: 6px;
+	}
+}
+
+.box-back{
+	.nivel_bajo{
+		background-color: #f2dede;
+		padding: 5px;
+    	border-radius: 6px;
+	}
 }
