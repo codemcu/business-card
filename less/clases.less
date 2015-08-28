@@ -11,9 +11,9 @@
 .box-front, 
 .box-back {
 	width: 300px;
-	height: auto;
+	height: 100%;
 	border-radius: 6px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .box-to {
@@ -136,7 +136,7 @@
 }
 
 .box-back {
- 	.fa{
+	.fa{
 		font-size: 3rem;
 	}	
 }
@@ -151,12 +151,14 @@ div {
 }
 
 .details {
-	margin: 0;
+	margin: 0 0 70px 0;
 }
 
 .details {
 	span{
-		font-size: 1.4rem;
+		font-size: 1.2rem;
+		color: rgba(0,0,0,0.2);
+		font-style: italic;
 	}
 }
 
@@ -174,6 +176,60 @@ div {
 		background: none;
 	}	
 }
+
+.details{
+	.help{
+		display: none;
+
+	}
+}
+
+.details{
+	.help{
+		@media screen and (max-width: 960px) {
+			display: block;	
+		}
+	}
+}
+
+.details{
+	.help{
+		span{
+			@media only screen and (max-width: 960px) {
+				-webkit-animation-name: roll; /* Chrome, Safari, Opera */
+				-webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+				animation-name: roll;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+
+				@-webkit-keyframes roll {
+					0%  {color: rgba(0,0,0,0.2);}
+					14%	{color: rgba(0,0,0,0.4);}
+					28%	{color: rgba(0,0,0,0.6);}
+					42%	{color: rgba(0,0,0,0.8);}
+					56% {color: rgba(0,0,0,1);}
+					70% {color: rgba(0,0,0,0.8);}
+					84% {color: rgba(0,0,0,0.6);}
+					98% {color: rgba(0,0,0,0.4);}
+				}
+
+				@keyframes roll {
+					0%  {color: rgba(0,0,0,0.2);}
+					14%	{color: rgba(0,0,0,0.4);}
+					28%	{color: rgba(0,0,0,0.6);}
+					42%	{color: rgba(0,0,0,0.8);}
+					56% {color: rgba(0,0,0,1);}
+					70% {color: rgba(0,0,0,0.8);}
+					84% {color: rgba(0,0,0,0.6);}
+					98% {color: rgba(0,0,0,0.4);}
+				}
+			}
+		}	
+	}
+}
+
+
+
 
 hr{
 	border: 1px solid #cccccc;
@@ -201,7 +257,7 @@ hr{
 
 .box-front-footer,
 .box-back-footer {
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	padding: 0 10px 10px 10px;
 	width: 100%;
@@ -212,31 +268,90 @@ hr{
 
 .box:hover {
 	.box-to{
- 		.gradosBox(180deg);
- 	}		
+		.gradosBox(180deg);
+	}		
 }
 
 // niveles
 
 .box-back{
-	.nivel_alto{
-		background-color: #dff0d8;
-		padding: 10px;
+	.nivel_experto{
+		background-color: #355366;
+		padding: 5px;
+		border-radius: 6px;
+		color: white;
 	}
 }
 
 .box-back{
-	.nivel_medio{
-		background-color: #d9edf7;
+	.nivel_eficiente{
+		background-color: #5787A6;
 		padding: 5px;
-    	border-radius: 6px;
+		border-radius: 6px;
+		color: white;
 	}
 }
 
 .box-back{
-	.nivel_bajo{
-		background-color: #f2dede;
+	.nivel_familiar{
+		background-color: #78BBE6;
 		padding: 5px;
-    	border-radius: 6px;
+		border-radius: 6px;
+		color: white;
+	}
+}
+
+.box-back{
+	.nivel_principiante{
+		background-color: #7CD3FF;
+		padding: 5px;
+		border-radius: 6px;
+		color: white;
+	}
+}
+
+.legend {
+	position: relative;
+	bottom: -30px;
+	left: 20px;
+	float: left;
+}
+
+.legend{
+	div{
+		display: inline-block;	
+	}
+}
+
+.legend{
+	li{
+		display: block;
+		text-align: left;
+		font-size: 1.1rem;
+		margin: 0;
+	}
+}
+
+#github{
+	position: relative;
+	float: right;
+	right: 15px;
+	top: 65px;
+}
+
+#github{
+	img{
+		position: absolute;
+		right: 10px;
+	}
+}
+
+#github{
+	span{
+		float: right;
+		right: 15px;
+		position: relative;
+		top: -23px;
+		font-size: 1.2rem;
 	}
 }
