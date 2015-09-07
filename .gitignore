@@ -1,6 +1,20 @@
-#$ cat .gitignore
-css/fa
+$ cat .gitignore
+
+css/fa .gitignore
+
+less/.gitignore
+
 fonts/
-.idea/
+
+.idea/**
+
 *.txt
+
 less/
+
+sass/
+
+node_modules
+
+css/*css.map
+css/*.old*
