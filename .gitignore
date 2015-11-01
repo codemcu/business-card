@@ -17,4 +17,7 @@ sass/
 node_modules
 
 css/*css.map
+
 css/*.old*
+
+*.html.old*
